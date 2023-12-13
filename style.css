@@ -76,9 +76,8 @@ ul .active:hover{
     display: none;
 }
 .header h1{
-    position: absolute;
-    top: 200px;
-    left: 22%;
+    width: 100%;
+    text-align: center;
     color: #fff;
     font-size: 100px;
     font-family: 'Fraunces', serif;
@@ -259,7 +258,7 @@ ul .active:hover{
 }
 #img-gallery {
     display: grid;
-    grid-template-columns: repeat(4, 474px);  
+    grid-template-columns: repeat(4, 25%);  
   
   }
   #img-gallery-mobile{
@@ -395,7 +394,7 @@ ul .active:hover{
         font-size: 40px;
         text-align: center;
         top: 200px;
-        left: 0px;
+        left: 3%;
     }
     .header .arrow{
         top: 360px;
@@ -516,9 +515,14 @@ ul .active:hover{
     .socials img{
         width: 20px;
     height: 20px;    
+}   
 }
 
-
-  
-    
+@media (min-width:600px) and (max-width:1009px) {
+    .header h1{
+        font-size: 60px;
+    }
+    #three{
+        grid-template-columns: 2fr;     
+    }
 }
